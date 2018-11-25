@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='images/favicon.png' rel='shortcut icon' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/galeria/galeriaJS.js"></script>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/estilos_galleria.css" rel="stylesheet">
+    <link href="css/estilo_footer.css" rel="stylesheet">
+
+    <title>MontufarCultural</title>
+    <style>
+        .texto_menu{
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        $(function () {
+
+            // elementos de la lista
+            var menues = $(".nav li");
+
+            // manejador de click sobre todos los elementos
+            menues.mouseover(function () {
+                // eliminamos active de todos los elementos
+                menues.removeClass("active");
+                menues.removeClass("texto_menu");
+                // activamos el elemento clicado.
+                $(this).addClass("active");
+                $(this).addClass("texto_menu")
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" id="mi_menu">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="images/logo2.png" width="130px" height="55px">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="index_b.html"><strong><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  INICIO</strong></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">ARTES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Teatro</a></li>
+                            <li><a href="#">Música</a></li>
+                            <li><a href="#">Danza</a></li>
+                            <li><a href="#">Cine</a></li>
+                            <li><a href="#">Literatura</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">EXPOSICIONES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Museos</a></li>
+                            <li><a href="#">Pintura</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li id="menu_festival" class="dropdown"><a href="#">FESTIVALES</a></li>
+                    <li class="dropdown"><a href="#">TALLERES</a></li>
+                    <li class="dropdown"><a href="#">ARTISTAS</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrate</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Inicia sesión</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <br>
+    <!--Galeria de imagenes -->
+    <div class="container">
+    <div class="main">
+
+        <h1>MONTUFAR CULTURAL</h1>
+        <hr>
+
+        <h2>EVENTOS PRINCIPALES</h2>
+        <p>Bienvenido a la página oficial de eventos culturales del cantón Montufar</p>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="fila">
+            <div class="columna_galeria">
+                <div class="content">
+                    <img src="images/images_eventos/juana-cordova-400X400.jpg" alt="Mountains" style="width:100%">
+                    <h3>Acantilado exposición de Juana Córdova</h3>
+                    <p>Oct 17 - Nov 16, 2018</p>
+                </div>
+            </div>
+            <div class="columna_galeria">
+                <div class="content">
+                    <img src="images/images_eventos/kingman-400X400.jpg" alt="Lights" style="width:100%">
+                    <h3>Exposición "La Fiesta" de Eduardo Kingman</h3>
+                    <p>Sep 15 - Oct 18, 2018</p>
+                </div>
+            </div>
+            <div class="columna_galeria">
+                <div class="content">
+                    <img src="images/images_eventos/event-featured-Gonzalo-Casares-1538870734.jpeg" alt="Nature" style="width:100%">
+                    <h3>Seminario de arquitectura por Gonzalo Casares</h3>
+                    <p>Nov 25 - Dic 15, 2018</p>
+                </div>
+            </div>
+            <div class="columna_galeria">
+                <div class="content">
+                    <img src="images/images_eventos/even_artista.jpeg" alt="Mountains" style="width:100%">
+                    <h3>Convocatoria artistica por la Casa de la Cultura</h3>
+                    <p>Nov 14 - Dic 10, 2018</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <img src="images/images_eventos/biblioteca_evento.jpeg" alt="Bear" style="width:100%">
+            <h3>"La biblioteca y sus universos" Encuentro Internacional de Bibliotecarios ...y otros extraterrestres</h3>
+            <p>El objetivo del encuentro es reunir a profesionales vinculados al universo bibliotecario para debatir sobre
+             el rol de las bibliotecas en el fomento a la lectura, y sobre la importancia de la biblioteca pública en la agenda 
+             política. Este evento internacional contribuirá a sostener el proceso de fortalecimiento del sistema nacional de 
+             bibliotecas de forma colaborativa y corresponsable.</p>
+        </div>
+
+        <div class="fila">
+                <div class="columna_galeria">
+                    <div class="content">
+                        <img src="images/images_eventos/even_jazz.jpg" alt="Mountains" style="width:100%">
+                        <h3>Convocatoria nacional Ecuador Jazz</h3>
+                        <p>Sep 16 - Nov 15, 2018</p>
+                    </div>
+                </div>
+                <div class="columna_galeria">
+                    <div class="content">
+                        <img src="images/images_eventos/even_networking.jpeg" alt="Lights" style="width:100%">
+                        <h3>Un evento de Networking</h3>
+                        <p>Nov 02 - Nov 25, 2018</p>
+                    </div>
+                </div>
+                <div class="columna_galeria">
+                    <div class="content">
+                        <img src="images/images_eventos/fill2018-kikiriquito-400X400.jpg" alt="Nature" style="width:100%">
+                        <h3>Los relatos de Kikiriquito</h3>
+                        <p>Oct 10 - Nov 01, 2018</p>
+                    </div>
+                </div>
+                <div class="columna_galeria">
+                    <div class="content">
+                        <img src="images/images_eventos/kingman-400X400.jpg" alt="Mountains" style="width:100%">
+                        <h3>Festival de danza Kingman</h3>
+                        <p>Nov 25 - Dic 10, 2018</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- END MAIN -->
+    </div>
+    </div>
+    <br>
+    <br>
+    <footer class="text-center footer-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-col">
+                        <h3>GAD Montufar</h3>
+                        <p>
+                            Calle Sucre 03-61 y Bolívar <br />
+                            +593 62 290 123 / 124 <br>
+                            
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer-col">
+                        <h3>Contáctenos</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook">info@gadmontufar.gob.ec</i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"> atencionciudadana@gadmontufar.gob.ec</i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a  target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-col">
+                        <h3>MontufarCultural</h3>
+                        <p>Información para toda la ciudadania acerca de los eventos 
+                            culturales que se realizan en el cantón Montufar
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
